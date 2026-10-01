@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOBAL Logistics Service - Fast & Reliable Delivery Worldwide</title>
+    <meta name="description" content="GLOBAL Logistics Service - Professional courier and logistics delivery worldwide. Track your parcel, contact us via WhatsApp or Email.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="lang-bar">
+        <div class="container">
+            <label for="languageSelect"><i class="fas fa-globe"></i> <span data-i18n="select_language">Select Language:</span></label>
+            <select id="languageSelect" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="pt">Português</option>
+                <option value="ar">العربية</option>
+                <option value="zh">中文</option>
+                <option value="hi">हिन्दी</option>
+                <option value="ru">Русский</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="GLOBAL Logistics Service" width="50" height="50">
+                <div class="logo-text">
+                    <h1>GLOBAL</h1>
+                    <span data-i18n="logistics_service">Logistics Service</span>
+                </div>
+            </div>
+            <nav class="nav" id="mainNav">
+                <a href="#home" data-i18n="nav_home">Home</a>
+                <a href="#services" data-i18n="nav_services">Services</a>
+                <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+                <a href="#track" data-i18n="nav_track">Track Parcel</a>
+                <a href="#quote" data-i18n="nav_quote">Get Quote</a>
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+                <a href="admin.html" class="admin-link" data-i18n="nav_admin">Admin</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h2 data-i18n="hero_title">Fast, Secure & Worldwide Delivery</h2>
+            <p data-i18n="hero_subtitle">Your trusted partner for reliable courier and logistics services across the globe. We deliver with care, speed, and precision.</p>
+            <div class="hero-buttons">
+                <a href="#track" class="btn btn-primary" data-i18n="btn_track">Track Your Parcel</a>
+                <a href="#quote" class="btn btn-secondary" data-i18n="btn_get_quote">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services_title">Our Services</h2>
+            <p class="section-subtitle" data-i18n="services_subtitle">Comprehensive logistics solutions tailored to your needs</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shipping-fast"></i></div>
+                    <h3 data-i18n="service1_title">Express Delivery</h3>
+                    <p data-i18n="service1_desc">Same-day and next-day delivery options for urgent parcels within major cities.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3 data-i18n="service2_title">International Shipping</h3>
+                    <p data-i18n="service2_desc">Reliable worldwide shipping to over 150 countries with full tracking.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-box-open"></i></div>
+                    <h3 data-i18n="service3_title">Package Handling</h3>
+                    <p data-i18n="service3_desc">Secure packaging and careful handling for fragile and high-value items.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-warehouse"></i></div>
+                    <h3 data-i18n="service4_title">Warehousing</h3>
+                    <p data-i18n="service4_desc">Safe storage solutions and inventory management for businesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title" data-i18n="pricing_title">Simple Pricing</h2>
+            <p class="section-subtitle" data-i18n="pricing_subtitle">Transparent rates for every delivery need. Final price depends on weight, size and destination.</p>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-badge" data-i18n="price1_badge">Popular</div>
+                    <h3 data-i18n="price1_title">Standard</h3>
+                    <div class="price-amount">$12<span data-i18n="price_from">+</span></div>
+                    <p class="price-desc" data-i18n="price1_desc">Local & domestic deliveries</p>
+                    <ul>
+                        <li data-i18n="price1_f1">2–5 business days</li>
+                        <li data-i18n="price1_f2">Full tracking</li>
+                        <li data-i18n="price1_f3">Up to 5 kg</li>
+                        <li data-i18n="price1_f4">Email updates</li>
+                    </ul>
+                    <a href="#quote" class="btn btn-primary" data-i18n="btn_get_quote">Get a Quote</a>
+                </div>
+                <div class="price-card featured">
+                    <div class="price-badge" data-i18n="price2_badge">Best Value</div>
+                    <h3 data-i18n="price2_title">Express</h3>
+                    <div class="price-amount">$25<span data-i18n="price_from">+</span></div>
+                    <p class="price-desc" data-i18n="price2_desc">Fast nationwide delivery</p>
+                    <ul>
+                        <li data-i18n="price2_f1">Same / next day</li>
+                        <li data-i18n="price2_f2">Priority handling</li>
+                        <li data-i18n="price2_f3">Up to 10 kg</li>
+                        <li data-i18n="price2_f4">WhatsApp updates</li>
+                    </ul>
+                    <a href="#quote" class="btn btn-primary" data-i18n="btn_get_quote">Get a Quote</a>
+                </div>
+                <div class="price-card">
+                    <div class="price-badge" data-i18n="price3_badge">Global</div>
+                    <h3 data-i18n="price3_title">International</h3>
+                    <div class="price-amount">$45<span data-i18n="price_from">+</span></div>
+                    <p class="price-desc" data-i18n="price3_desc">Worldwide shipping</p>
+                    <ul>
+                        <li data-i18n="price3_f1">3–10 business days</li>
+                        <li data-i18n="price3_f2">Customs support</li>
+                        <li data-i18n="price3_f3">Up to 20 kg</li>
+                        <li data-i18n="price3_f4">Door-to-door</li>
+                    </ul>
+                    <a href="#quote" class="btn btn-primary" data-i18n="btn_get_quote">Get a Quote</a>
+                </div>
+            </div>
+            <p class="pricing-note" data-i18n="pricing_note">* Prices are starting estimates. Contact us for an accurate quote based on your parcel.</p>
+        </div>
+    </section>
+
+    <!-- Get a Quote -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="quote_title">Request a Quote</h2>
+            <p class="section-subtitle" data-i18n="quote_subtitle">Tell us about your shipment and we will reply with the best rate via WhatsApp or Email</p>
+            <div class="quote-box">
+                <form id="quoteForm" onsubmit="submitQuote(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label data-i18n="quote_name">Your Name *</label>
+                            <input type="text" id="qName" required>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="quote_phone">Phone / WhatsApp *</label>
+                            <input type="tel" id="qPhone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label data-i18n="quote_email">Email</label>
+                            <input type="email" id="qEmail">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="quote_service">Service Type</label>
+                            <select id="qService">
+                                <option value="Standard" data-i18n="price1_title">Standard</option>
+                                <option value="Express" data-i18n="price2_title">Express</option>
+                                <option value="International" data-i18n="price3_title">International</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label data-i18n="quote_from">Pickup Location *</label>
+                            <input type="text" id="qFrom" required placeholder="City, Country">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="quote_to">Delivery Location *</label>
+                            <input type="text" id="qTo" required placeholder="City, Country">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label data-i18n="quote_weight">Approx. Weight (kg)</label>
+                            <input type="number" id="qWeight" min="0.1" step="0.1" placeholder="e.g. 2.5">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="quote_item">What are you sending?</label>
+                            <input type="text" id="qItem" placeholder="Documents, clothes, electronics...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="quote_message">Additional details</label>
+                        <textarea id="qMessage" rows="3" placeholder="Special instructions, preferred pickup date..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" data-i18n="btn_request_quote">Request Quote via WhatsApp</button>
+                </form>
+                <p class="quote-note" data-i18n="quote_note">After submitting you will be redirected to WhatsApp with your request pre-filled so we can reply quickly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track Section -->
+    <section id="track" class="track-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="track_title">Track Your Parcel</h2>
+            <p class="section-subtitle" data-i18n="track_subtitle">Enter your tracking code below to get real-time status updates</p>
+            <div class="track-box">
+                <div class="track-input-group">
+                    <input type="text" id="trackingCode" placeholder="e.g. GLS-2026-ABC123" data-i18n-placeholder="track_placeholder" autocomplete="off">
+                    <button onclick="trackParcel()" class="btn btn-primary" id="trackBtn" data-i18n="btn_track_now">Track Now</button>
+                </div>
+                <div id="trackResult" class="track-result" style="display:none;"></div>
+                <div id="trackLoading" class="track-loading" style="display:none;">
+                    <i class="fas fa-spinner fa-spin"></i> Loading...
+                </div>
+            </div>
+            <div class="track-note">
+                <i class="fas fa-info-circle"></i>
+                <p data-i18n="track_note">For the latest delivery status updates, please contact us via WhatsApp or Email. Our team is ready to assist you 24/7.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" data-i18n="about_title">About GLOBAL Logistics Service</h2>
+                    <p data-i18n="about_p1">GLOBAL Logistics Service is a premier courier and logistics company dedicated to providing fast, secure, and affordable delivery solutions worldwide.</p>
+                    <p data-i18n="about_p2">With a network spanning continents, modern tracking technology, and a team of dedicated professionals, we ensure your packages arrive safely and on time, every time.</p>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature1">Worldwide Coverage</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature2">Real-time Tracking</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature3">Secure Handling</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature4">24/7 Customer Support</span></li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat"><h3>150+</h3><p data-i18n="stat1">Countries</p></div>
+                    <div class="stat"><h3>50K+</h3><p data-i18n="stat2">Deliveries</p></div>
+                    <div class="stat"><h3>99%</h3><p data-i18n="stat3">On-Time</p></div>
+                    <div class="stat"><h3>24/7</h3><p data-i18n="stat4">Support</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
+            <p class="section-subtitle" data-i18n="contact_subtitle">Get in touch for quotes, tracking updates, or any inquiries</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-i18n="email_label">Email</h4>
+                            <a href="mailto:globallogistic@fastservice.com">globallogistic@fastservice.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-i18n="phone_label">Phone</h4>
+                            <a href="tel:+15184168768">+1 518 416 8768</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4 data-i18n="whatsapp_label">WhatsApp</h4>
+                            <a href="https://wa.me/15184168768" target="_blank" rel="noopener">Chat with us on WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="contact-note">
+                        <p data-i18n="contact_note"><strong>Important:</strong> Clients should contact the delivery company via WhatsApp or Email to be updated with their delivery status.</p>
+                    </div>
+                </div>
+                <div class="contact-form-box">
+                    <form id="contactForm" onsubmit="submitContact(event)">
+                        <input type="text" id="cName" required data-i18n-placeholder="form_name" placeholder="Your Name">
+                        <input type="email" id="cEmail" required data-i18n-placeholder="form_email" placeholder="Your Email">
+                        <input type="text" id="cSubject" data-i18n-placeholder="form_subject" placeholder="Subject">
+                        <textarea id="cMessage" rows="4" required data-i18n-placeholder="form_message" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-primary" data-i18n="btn_send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>GLOBAL Logistics Service</h3>
+                    <p data-i18n="footer_tagline">Delivering excellence worldwide</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home" data-i18n="nav_home">Home</a>
+                    <a href="#services" data-i18n="nav_services">Services</a>
+                    <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+                    <a href="#quote" data-i18n="nav_quote">Get Quote</a>
+                    <a href="#track" data-i18n="nav_track">Track</a>
+                    <a href="#contact" data-i18n="nav_contact">Contact</a>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-envelope"></i> globallogistic@fastservice.com</p>
+                    <p><i class="fas fa-phone"></i> +1 518 416 8768</p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/15184168768" target="_blank" style="color:#ccc;">WhatsApp</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GLOBAL Logistics Service. <span data-i18n="rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
